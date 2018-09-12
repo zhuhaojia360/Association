@@ -75,10 +75,10 @@ Page({
 
   //获取当前用户已报名的活动信息
   onGetActivities:function(){
-    var that = this;    
-    var currentUser = Bmob.User.current(); 
+    var that = this;
     var Activity_User = Bmob.Object.extend("activity_user");
     var query = new Bmob.Query(Activity_User);
+    var currentUser = Bmob.User.current(); 
     query.equalTo("realname", currentUser.get("realname"));  
     query.limit(that.data.count += 10);
     query.descending("activitytime");  

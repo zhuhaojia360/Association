@@ -4,33 +4,32 @@
   <view class='header'>
     <view class='head'>
       <open-data type="userAvatarUrl"></open-data>
-    </view>    
+    </view>
     <view class='item'>
-      <text class='name'>{{name}}</text>
-    <text class='id'>{{id}}</text>
-    </view>    
+      <text class='name'>姓名：{{name}}</text>
+      <text class='id'>ID：{{id}}</text>
+    </view>
   </view>
   <view class='content'>
     <view class='item'>
-      <text class='campus'>{{campus}}</text>
+      <text class='campus'>校区：{{campus}}</text>
     </view>
     <view class='item'>
-      <text class='college'>{{college}}</text>
+      <text class='college'>班级：{{college}}</text>
     </view>
-    <view class='item'>
+    <!--view class='item'>
       <text class='department'>{{department}}</text>
-    </view>
+    </view-->
     <view class='item'>
-      <text class='phone'>{{phone}}</text>
-    </view>    
+      <text class='phone'>电话：{{id}}</text>
+    </view>
   </view>
   <!-- 按钮功能区域 -->
-  <view class='bottom'>    
-    <button type='primary' bindtap='onManageActivities'>管理活动</button> 
+  <view class='bottom'>
+    <button type='primary' bindtap='onManageActivities'>管理活动</button>
     <button type='primary' bindtap='onManageTask'>管理任务</button>
     <!-- <button type='primary' bindtap='onGrant'>活动授权</button>   -->
-    <button type='primary' bindtap='onSuggest'>意见反馈</button>     
-    <button type='primary' bindtap='onLogOut'>注销账号</button>    
+    <button type='primary' bindtap='onSuggest'>意见反馈</button>
+    <button type='primary' bindtap='onLogOut'>注销账号</button>
   </view>
 </view>
-

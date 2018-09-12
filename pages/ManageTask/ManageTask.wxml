@@ -5,7 +5,7 @@
   <view class='header'>
     <button type='primary' bindtap='onCreateTask'>创建任务</button> 
   </view>  
-  <label>我创建的诚信状</label>
+  <!--label>我创建的任务</label-->
     <block wx:for="{{allitems}}" wx:key="i">
         <!-- 该任务已完成 -->
         <view wx:if="{{item.complete}}" class='alltask' data-id='{{item.objectId}}' bindtap='onTaskDetail' style='background-color:{{item.color}}'>

@@ -1,7 +1,7 @@
 <!--pages/index/ActivitieDetail.wxml-->
 <!-- 活动详情页面 -->
 <view class='container'>
-  <label class='title'>山东大学唐仲英爱心社</label>
+  <!--label class='title'>山东大学唐仲英爱心社</label-->
   <view class="text">
     <label>活动名称：</label>
     <text>{{activity_name}}</text>

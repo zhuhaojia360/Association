@@ -2,7 +2,7 @@
 <!-- 排名页面 -->
 <view class='containner'>
   <view class='range'>
-    <label>诚信状总排名</label>
+    <!--label>诚信状总排名</label-->
     <block wx:for="{{items}}" wx:key="i">
       <view class='tasks'>
         <!-- 第一名 -->

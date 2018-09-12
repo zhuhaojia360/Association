@@ -9,22 +9,24 @@ Page({
     name:'',
     namePhold:'姓名',
     id:'',
-    idPhold:'学号',
+    idPhold:'电话/ID',
     password:'',
     passwordPhold:'密码',
     passwordAgain: '',
     passwordAgainPhold: '再次输入密码',
-    campuses: ['中心校区','洪家楼校区','软件园校区','趵突泉校区','兴隆山校区','千佛山校区','青岛校区'],
-    campus:'中心校区',
+    campuses: ['北辰D3校区', '北辰E6校区','金茂府校区','金茂梅溪湖校区'],
+    campus:'北辰D3校区',
     campusIndex:0,
     college:'',
-    collegePhold:'学院',
-    departments: ['活动实践部', '网络宣传部', '新闻中心', '秘书处', '财务部', '社长',  '团支书', '副社'],
-    department:'非唐社成员',
+    collegePhold:'班级',
+    departments: ['油画', '素描', '漫画', '国画', '书法'],
+    department:'非画趣坊会员',
     departmentIndex: 0,
     departmentPhold:'部门',
     phone:'',
     phonePhold:'手机号',
+    age:'',
+    agePhold:'年龄',
     depart:true,
     items:[
       {name:'是',checked:false},
@@ -118,8 +120,13 @@ Page({
   },
 
 //获取输入的手机号
-  onGetPhone: function (e){
+  /*onGetPhone: function (e){
     this.setData({ phone: e.detail.value });
+  },*/
+
+  //获取输入的年龄
+  onGetAge: function (e) {
+    this.setData({ age: e.detail.value });
   },
 
   //获取输入的密码
@@ -147,9 +154,9 @@ Page({
   onRegister:function(e){
     var user  = new Bmob.User();
     //所有输入不为空
-    if(this.data.name != '' && this.data.id != '' && this.data.campus != '' && this.data.college != '' && this.data.phone != ''){
-      if (this.data.id.length == 12){
-        if (this.data.phone.length == 11) {
+    if(this.data.name != '' && this.data.id != '' && this.data.campus != '' && this.data.college != '' && this.data.age != ''){
+      if (this.data.id.length == 11){
+        if (this.data.id.length == 11) {
           //两次输入的密码相等
           if (this.data.password == this.data.passwordAgain) {
             user.set('username', this.data.id);
@@ -161,7 +168,8 @@ Page({
             user.set('grant', false);
             user.set('sign', false);
             user.set('department', this.data.department);
-            user.set('phone', this.data.phone);
+            //user.set('phone', this.data.phone);
+            user.set('age',this.data.age);
             user.signUp(null, {
               success: function (res) {
                 wx.showToast({

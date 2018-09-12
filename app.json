@@ -1,6 +1,6 @@
 {
-  "pages":[  
-    "pages/Cover/Cover",
+  "pages":[
+    "pages/Login/Login",
     "pages/Main/Main",    
     "pages/ManageTask/ManageTask",    
     "pages/Sign/Sign",
@@ -16,15 +16,15 @@
     "pages/Suggest/Suggest",    
     "pages/ChangeActivity/ChangeActivity",
     "pages/ChangeTask/ChangeTask",              
-    "pages/Register/Register",    
-    "pages/Login/Login",                 
-    "pages/ActivityDetail/ActivityDetail",                     
+    "pages/Register/Register",                
+    "pages/ActivityDetail/ActivityDetail",
+    "pages/Cover/Cover",                  
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "山东大学唐仲英爱心社",
+    "navigationBarTitleText": "画趣坊少儿美术",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
@@ -48,7 +48,7 @@
         "selectedIconPath": "images/sign_g.png",
         "iconPath": "images/sign.png",
         "pagePath": "pages/Sign/Sign",
-        "text": "诚信状"
+        "text": "积分榜"
       },
       {
         "selectedIconPath": "images/detail_g.png",

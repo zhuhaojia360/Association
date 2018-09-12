@@ -25,11 +25,11 @@ Page({
     this.setData({ campus: currentUser.get("campus") });
     this.setData({ college: currentUser.get("college") });
     if (currentUser.get("department") == '') {
-      this.setData({ department: '非唐社成员' });
+      this.setData({ department: '画趣坊少儿美术' });
     }else{
       this.setData({ department: currentUser.get("department") });
     }    
-    this.setData({ phone: currentUser.get("phone") });      
+    //this.setData({ phone: currentUser.get("phone") });      
   },
 
   /**

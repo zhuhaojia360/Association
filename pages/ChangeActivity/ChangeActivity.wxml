@@ -1,7 +1,7 @@
 <!--pages/ChangeActivity/ChangeActivity.wxml-->
 <!-- 修改活动详情页面 -->
 <view class='container'>
-  <label class='title'>山东大学唐仲英爱心社</label>
+  <!--label class='title'>画趣坊少儿美术</label-->
   <view class="input">
     <label>活动名称：</label>
     <input value='{{activity_name}}' bindblur="onGetName" type="text" maxlength="100" />
