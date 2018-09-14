@@ -8,7 +8,7 @@ Page({
    */
   data: {
     account:'',
-    accountPhold:'学号',
+    accountPhold:'手机号',
     password: '',
     passwordPhold: '密码' 
   },

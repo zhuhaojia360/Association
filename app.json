@@ -1,9 +1,9 @@
 {
   "pages":[
-    "pages/Login/Login",
     "pages/Main/Main",    
     "pages/ManageTask/ManageTask",    
     "pages/Sign/Sign",
+    "pages/Login/Login",
     "pages/Calendar/Calendar",       
     "pages/CreateTask/CreateTask",   
     "pages/TaskRange/TaskRange",

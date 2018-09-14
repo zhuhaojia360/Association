@@ -13,7 +13,7 @@ App({
     userInfo: null
   },
   req: function (method, url, arg) {
-    let domian = 'http://www.tuling123.com', data = { 'key': 'dc0c5c7ff7624a97a844b6dc84448459' }, dataType = 'json';
+    let domian = 'http://www.tuling123.com', data = { 'key': '3e081e35405143b7bc7d2d65c0de15dd' }, dataType = 'json';
     let header = { 'content-type': 'application/x-www-form-urlencoded' };
     if (arg.data) {
       data = Object.assign(data, arg.data);
